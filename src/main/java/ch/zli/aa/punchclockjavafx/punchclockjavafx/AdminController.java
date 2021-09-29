@@ -6,6 +6,5 @@ package ch.zli.aa.punchclockjavafx.punchclockjavafx;
  * @Author: Ayushan Ahilan
  * @Version:
  */
-public class OnlyAdminController {
-
+public class AdminController {
 }
