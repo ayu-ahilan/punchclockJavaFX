@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="$CONTROLLER_NAME$">
+   <children>
+      <Label layoutX="268.0" layoutY="14.0" text="Punch Clock" />
+      <Label layoutX="220.0" layoutY="50.0" text="Bitte Registrieren Sie sich hier." />
+      <Label layoutX="73.0" layoutY="108.0" text="Benutzername:" />
+      <Label layoutX="88.0" layoutY="151.0" text="Passwort:" />
+      <Label layoutX="22.0" layoutY="191.0" text="Bitte wiederholen Sie ihr Passwort:" />
+      <TextField layoutX="268.0" layoutY="104.0" />
+      <TextField layoutX="268.0" layoutY="147.0" />
+      <TextField layoutX="268.0" layoutY="188.0" />
+      <Button layoutX="480.0" layoutY="188.0" mnemonicParsing="false" text="Registrieren" />
+      <Button layoutX="469.0" layoutY="265.0" mnemonicParsing="false" text="Zurück zu Login" />
+   </children>
+</AnchorPane>
