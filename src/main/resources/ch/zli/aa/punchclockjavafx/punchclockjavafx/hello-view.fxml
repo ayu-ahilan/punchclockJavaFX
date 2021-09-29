@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="439.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="14.0" layoutY="57.0" prefHeight="17.0" prefWidth="53.0" text="Check in" />
+      <Label layoutX="14.0" layoutY="99.0" text="Check out" />
+      <Label layoutX="126.0" layoutY="32.0" minWidth="-Infinity" prefHeight="17.0" prefWidth="70.0" text="dd/mm/yyyy" />
+      <Label layoutX="300.0" layoutY="32.0" text="--:--" />
+      <Label layoutX="196.0" layoutY="6.0" text="PunchClock" />
+      <TextField layoutX="276.0" layoutY="53.0" prefHeight="25.0" prefWidth="70.0" />
+      <TextField layoutX="276.0" layoutY="95.0" prefWidth="70.0" />
+      <Button layoutX="377.0" layoutY="95.0" mnemonicParsing="false" prefHeight="25.0" text="Save" />
+      <DatePicker layoutX="87.0" layoutY="53.0" prefHeight="25.0" prefWidth="149.0" />
+      <DatePicker layoutX="87.0" layoutY="95.0" prefHeight="25.0" prefWidth="149.0" />
+      <TableView layoutX="15.0" layoutY="145.0" prefHeight="263.0" prefWidth="405.0">
+        <columns>
+          <TableColumn minWidth="11.0" prefWidth="62.20001220703125" text="ID" />
+          <TableColumn prefWidth="173.0" text="C2" />
+            <TableColumn prefWidth="173.0" text="C2" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>
