@@ -9,8 +9,8 @@
       <Button layoutX="431.0" layoutY="175.0" mnemonicParsing="false" text="Anmelden" onAction="#goToMain"/>
       <Label layoutX="67.0" layoutY="116.0" text="Benutzername:" />
       <Label layoutX="82.0" layoutY="170.0" text="Passwort:" />
-      <TextField layoutX="195.0" layoutY="112.0" />
-      <TextField layoutX="195.0" layoutY="175.0" />
+      <TextField layoutX="195.0" layoutY="112.0" fx:id="username"/>
+      <TextField layoutX="195.0" layoutY="175.0" fx:id="password"/>
       <Label layoutX="224.0" layoutY="77.0" text="Bitte melden Sie sich hier an." />
       <Label layoutX="67.0" layoutY="298.0" text="Noch kein Account?  Erstellen Sie eins!!!" />
       <Button layoutX="426.0" layoutY="294.0" mnemonicParsing="false" text="Registrieren" onAction="#goToSignUp"/>
