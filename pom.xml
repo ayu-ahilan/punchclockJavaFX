@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                ch.zli.aa.punchclockjavafx.punchclockjavafx/ch.zli.aa.punchclockjavafx.punchclockjavafx.HelloApplication
+                                ch.zli.aa.punchclockjavafx.punchclockjavafx/ch.zli.aa.punchclockjavafx.punchclockjavafx.Application
                             </mainClass>
                         </configuration>
                     </execution>

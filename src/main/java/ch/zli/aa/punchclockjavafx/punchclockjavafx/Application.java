@@ -1,6 +1,5 @@
 package ch.zli.aa.punchclockjavafx.punchclockjavafx;
 
-import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -8,23 +7,23 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class Application extends javafx.application.Application {
 
     private Stage primaryStage;
 
-    private static HelloApplication instance;
+    private static Application instance;
 
-    public static HelloApplication getInstance() {
+    public static Application getInstance() {
         return instance;
     }
 
     @Override
     public void start(Stage stage) throws IOException {
 
-        HelloApplication.instance = this;
+        Application.instance = this;
         this.primaryStage = stage;
 
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("login_view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("login_view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 650, 350);
         this.primaryStage.setTitle("Login");
         this.primaryStage.setScene(scene);

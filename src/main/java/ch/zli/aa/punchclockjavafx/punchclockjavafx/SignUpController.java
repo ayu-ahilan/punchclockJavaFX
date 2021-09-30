@@ -22,11 +22,11 @@ public class SignUpController {
 
     public void signupAndgoLogin() throws IOException {
 
-        HelloApplication.getInstance().toLogin_view();
+        Application.getInstance().toLogin_view();
     }
 
     public void goLogin() throws IOException {
 
-        HelloApplication.getInstance().toLogin_view();
+        Application.getInstance().toLogin_view();
     }
 }

@@ -2,7 +2,6 @@ package ch.zli.aa.punchclockjavafx.punchclockjavafx;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
@@ -40,7 +39,7 @@ public class MainController {
 
     public void logout() throws IOException {
 
-        HelloApplication.getInstance().toLogin_view();
+        Application.getInstance().toLogin_view();
     }
 
     public void delete() throws IOException {
@@ -49,7 +48,7 @@ public class MainController {
 
     public void admin() throws IOException {
 
-        HelloApplication.getInstance().toAdmin_view();
+        Application.getInstance().toAdmin_view();
     }
 
 }

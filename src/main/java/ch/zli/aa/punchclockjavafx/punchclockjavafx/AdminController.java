@@ -21,7 +21,7 @@ public class AdminController {
     TextField idToDelete;
     public void backToMain() throws IOException {
 
-        HelloApplication.getInstance().toMain_view();
+        Application.getInstance().toMain_view();
     }
 
     public void deleteUser() throws IOException {

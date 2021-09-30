@@ -19,11 +19,11 @@ public class LoginController {
     @FXML
     TextField password;
     public void goToMain() throws IOException {
-        HelloApplication.getInstance().toMain_view();
+        Application.getInstance().toMain_view();
 
     }
 
     public void goToSignUp() throws IOException {
-        HelloApplication.getInstance().toSignUP_view();
+        Application.getInstance().toSignUP_view();
     }
 }
