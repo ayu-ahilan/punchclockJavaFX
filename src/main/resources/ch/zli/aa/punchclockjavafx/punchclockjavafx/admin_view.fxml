@@ -10,20 +10,32 @@
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.zli.aa.punchclockjavafx.punchclockjavafx.AdminController">
    <children>
       <Label layoutX="268.0" layoutY="14.0" text="Punch Clock" />
-      <Label layoutX="131.0" layoutY="48.0" text="Hier können Sie sich Benutzer anschauen und Benutzer löschen." />
-      <Label layoutX="62.0" layoutY="90.0" text="Users:" />
-      <Button layoutX="488.0" layoutY="358.0" mnemonicParsing="false" text="Zurück zu Main" onAction="#backToMain"/>
-      <TreeTableView layoutX="131.0" layoutY="90.0" prefHeight="200.0" prefWidth="287.0" fx:id="treeTableView">
+      <Label layoutX="94.0" layoutY="32.0" text="Hier können Sie sich Benutzer anschauen und Benutzer löschen oder updaten." />
+      <Label layoutX="101.0" layoutY="57.0" text="Users:" />
+      <Button layoutX="497.0" layoutY="371.0" mnemonicParsing="false" onAction="#backToMain" text="Zurück zu Main" />
+      <TreeTableView fx:id="treeTableView" layoutX="145.0" layoutY="57.0" prefHeight="200.0" prefWidth="287.0">
         <columns>
           <TreeTableColumn prefWidth="48.79998779296875" text="ID" />
           <TreeTableColumn prefWidth="116.0" text="Benutzername" />
             <TreeTableColumn prefWidth="119.20001220703125" text="Passwort" />
         </columns>
       </TreeTableView>
-      <Button layoutX="353.0" layoutY="331.0" mnemonicParsing="false" text="Delete User" onAction="#deleteUser"/>
-      <Label layoutX="10.0" layoutY="326.0" text="Bitte geben Sie die Id des" />
-      <Label layoutX="15.0" layoutY="340.0" text="Benutzers an, die Sie " />
-      <Label layoutX="26.0" layoutY="353.0" text="löschen möchten" />
-      <TextField layoutX="183.0" layoutY="331.0" fx:id="idToDelete"/>
+      <Button layoutX="507.0" layoutY="168.0" mnemonicParsing="false" onAction="#deleteUser" text="Delete User" />
+      <Label layoutX="450.0" layoutY="66.0" text="Bitte geben Sie die Id des" />
+      <Label layoutX="461.0" layoutY="84.0" text="Benutzers an, die Sie " />
+      <Label layoutX="471.0" layoutY="102.0" text="löschen möchten" />
+      <TextField fx:id="idToDelete" layoutX="507.0" layoutY="130.0" prefHeight="26.0" prefWidth="78.0" />
+      <Label layoutX="463.0" layoutY="134.0" text="ID:" />
+      <Label layoutX="14.0" layoutY="274.0" text="Bitte geben Sie die Id des" />
+      <Label layoutX="25.0" layoutY="292.0" text="Benutzers an, die Sie " />
+      <Label layoutX="34.0" layoutY="310.0" text="updaten möchten" />
+      <TextField layoutX="253.0" layoutY="278.0" prefHeight="26.0" prefWidth="39.0" fx:id="updateID"/>
+      <Label layoutX="179.0" layoutY="282.0" text="ID:" />
+      <TextField layoutX="253.0" layoutY="315.0" fx:id="updateBenutzername"/>
+      <TextField layoutX="253.0" layoutY="358.0" fx:id="updatePassword"/>
+      <Button layoutX="417.0" layoutY="337.0" mnemonicParsing="false" onAction="#saveUpdatetUser" text="save User"/>
+      <Button layoutX="328.0" layoutY="280.0" mnemonicParsing="false" text="Enter" onAction="#enterIDUpdate"/>
+      <Label layoutX="155.0" layoutY="319.0" text="Benutzername:" />
+      <Label layoutX="168.0" layoutY="362.0" text="Passwort:" />
    </children>
 </AnchorPane>

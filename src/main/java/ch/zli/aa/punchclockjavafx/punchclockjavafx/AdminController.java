@@ -27,4 +27,12 @@ public class AdminController {
     public void deleteUser() throws IOException {
 
     }
+
+    public void saveUpdatetUser() throws IOException {
+
+    }
+
+    public void enterIDUpdate() throws IOException {
+
+    }
 }
