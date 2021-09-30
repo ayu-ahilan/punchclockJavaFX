@@ -7,4 +7,7 @@ package ch.zli.aa.punchclockjavafx.punchclockjavafx;
  * @Version:
  */
 public class SignUpController {
+    public void goToSignUP() {
+
+    }
 }
