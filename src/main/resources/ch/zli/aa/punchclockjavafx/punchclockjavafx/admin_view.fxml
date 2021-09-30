@@ -13,7 +13,7 @@
       <Label layoutX="131.0" layoutY="48.0" text="Hier können Sie sich Benutzer anschauen und Benutzer löschen." />
       <Label layoutX="62.0" layoutY="90.0" text="Users:" />
       <Button layoutX="488.0" layoutY="358.0" mnemonicParsing="false" text="Zurück zu Main" onAction="#backToMain"/>
-      <TreeTableView layoutX="131.0" layoutY="90.0" prefHeight="200.0" prefWidth="287.0">
+      <TreeTableView layoutX="131.0" layoutY="90.0" prefHeight="200.0" prefWidth="287.0" fx:id="treeTableView">
         <columns>
           <TreeTableColumn prefWidth="48.79998779296875" text="ID" />
           <TreeTableColumn prefWidth="116.0" text="Benutzername" />
@@ -24,6 +24,6 @@
       <Label layoutX="10.0" layoutY="326.0" text="Bitte geben Sie die Id des" />
       <Label layoutX="15.0" layoutY="340.0" text="Benutzers an, die Sie " />
       <Label layoutX="26.0" layoutY="353.0" text="löschen möchten" />
-      <TextField layoutX="183.0" layoutY="331.0" />
+      <TextField layoutX="183.0" layoutY="331.0" fx:id="idToDelete"/>
    </children>
 </AnchorPane>

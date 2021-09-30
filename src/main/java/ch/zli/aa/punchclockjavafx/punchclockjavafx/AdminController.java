@@ -1,5 +1,9 @@
 package ch.zli.aa.punchclockjavafx.punchclockjavafx;
 
+import javafx.fxml.FXML;
+import javafx.scene.control.TextField;
+import javafx.scene.control.TreeTableView;
+
 import java.io.IOException;
 
 /**
@@ -10,6 +14,11 @@ import java.io.IOException;
  */
 public class AdminController {
 
+    @FXML
+    TreeTableView treeTableView;
+
+    @FXML
+    TextField idToDelete;
     public void backToMain() throws IOException {
 
         HelloApplication.getInstance().toMain_view();
