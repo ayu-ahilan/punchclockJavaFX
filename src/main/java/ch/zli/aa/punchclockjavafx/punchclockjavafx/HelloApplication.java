@@ -46,6 +46,13 @@ public class HelloApplication extends Application {
         this.primaryStage.show();
     }
 
+    public void toAdmin_view() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("admin_view.fxml"));
+        this.primaryStage.setScene(new Scene(root, 600, 410));
+        this.primaryStage.setTitle("Admin");
+        this.primaryStage.show();
+    }
+
     public static void main(String[] args) {
         launch();
     }
