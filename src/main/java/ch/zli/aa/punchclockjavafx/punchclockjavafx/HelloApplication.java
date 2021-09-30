@@ -35,7 +35,14 @@ public class HelloApplication extends Application {
     public void toMain_view() throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("main_view.fxml"));
         this.primaryStage.setScene(new Scene(root, 600, 410));
-        this.primaryStage.setTitle("Main_view");
+        this.primaryStage.setTitle("Punch Clock");
+        this.primaryStage.show();
+    }
+
+    public void toSignUP_view() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("signUp_view.fxml"));
+        this.primaryStage.setScene(new Scene(root, 600, 410));
+        this.primaryStage.setTitle("signUp");
         this.primaryStage.show();
     }
 
