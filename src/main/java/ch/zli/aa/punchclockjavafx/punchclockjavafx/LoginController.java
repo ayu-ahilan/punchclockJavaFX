@@ -10,8 +10,11 @@ import java.io.IOException;
  */
 public class LoginController {
     public void goToMain() throws IOException {
-
         HelloApplication.getInstance().toMain_view();
 
+    }
+
+    public void goToSignUp() throws IOException {
+        HelloApplication.getInstance().toSignUP_view();
     }
 }

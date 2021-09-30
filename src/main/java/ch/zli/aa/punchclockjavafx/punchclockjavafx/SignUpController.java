@@ -1,5 +1,7 @@
 package ch.zli.aa.punchclockjavafx.punchclockjavafx;
 
+import java.io.IOException;
+
 /**
  * Class:
  *
@@ -7,7 +9,14 @@ package ch.zli.aa.punchclockjavafx.punchclockjavafx;
  * @Version:
  */
 public class SignUpController {
-    public void goToSignUP() {
 
+    public void signupAndgoLogin() throws IOException {
+
+        HelloApplication.getInstance().toLogin_view();
+    }
+
+    public void goLogin() throws IOException {
+
+        HelloApplication.getInstance().toLogin_view();
     }
 }
