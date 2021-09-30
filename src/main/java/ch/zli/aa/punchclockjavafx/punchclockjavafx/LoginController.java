@@ -7,4 +7,9 @@ package ch.zli.aa.punchclockjavafx.punchclockjavafx;
  * @Version:
  */
 public class LoginController {
+    public void goToMain() {
+
+
+
+    }
 }
