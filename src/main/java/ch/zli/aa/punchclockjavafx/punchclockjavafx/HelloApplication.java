@@ -53,6 +53,13 @@ public class HelloApplication extends Application {
         this.primaryStage.show();
     }
 
+    public void toLogin_view() throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("login_view.fxml"));
+        this.primaryStage.setScene(new Scene(root, 600, 410));
+        this.primaryStage.setTitle("Login");
+        this.primaryStage.show();
+    }
+
     public static void main(String[] args) {
         launch();
     }
