@@ -15,12 +15,12 @@
       <Label layoutX="126.0" layoutY="28.0" minWidth="-Infinity" prefHeight="17.0" prefWidth="70.0" text="dd/mm/yyyy" />
       <Label layoutX="300.0" layoutY="28.0" text="--:--" />
       <Label layoutX="196.0" layoutY="6.0" text="PunchClock" />
-      <TextField layoutX="276.0" layoutY="44.0" prefHeight="25.0" prefWidth="70.0" />
-      <TextField layoutX="276.0" layoutY="81.0" prefWidth="70.0" />
+      <TextField layoutX="276.0" layoutY="44.0" prefHeight="25.0" prefWidth="70.0" fx:id="checkInTime"/>
+      <TextField layoutX="276.0" layoutY="81.0" prefWidth="70.0" fx:id="checkOutTime"/>
       <Button layoutX="375.0" layoutY="82.0" mnemonicParsing="false" prefHeight="25.0" text="Save" onAction="#saveData"/>
-      <DatePicker layoutX="87.0" layoutY="44.0" prefHeight="25.0" prefWidth="149.0" />
-      <DatePicker layoutX="87.0" layoutY="81.0" prefHeight="25.0" prefWidth="149.0" />
-      <TableView layoutX="14.0" layoutY="157.0" prefHeight="234.0" prefWidth="572.0">
+      <DatePicker layoutX="87.0" layoutY="44.0" prefHeight="25.0" prefWidth="149.0" fx:id="checkIn"/>
+      <DatePicker layoutX="87.0" layoutY="81.0" prefHeight="25.0" prefWidth="149.0" fx:id="checkOut"/>
+      <TableView layoutX="14.0" layoutY="157.0" prefHeight="234.0" prefWidth="572.0" fx:id="tableView">
         <columns>
           <TableColumn minWidth="11.0" prefWidth="33.60003662109375" text="ID" />
           <TableColumn prefWidth="145.5999755859375" text="CheckIn" />
@@ -33,12 +33,12 @@
       <Button layoutX="452.0" layoutY="11.0" mnemonicParsing="false" text="Admin" onAction="#admin"/>
       <Label layoutX="452.0" layoutY="86.0" text="Bitte geben Sie die ID" />
       <Label layoutX="442.0" layoutY="104.0" text="ein wo Sie löschen wollen" />
-      <TextField layoutX="468.0" layoutY="123.0" prefHeight="26.0" prefWidth="41.0" />
+      <TextField layoutX="468.0" layoutY="123.0" prefHeight="26.0" prefWidth="41.0" fx:id="id_textfield"/>
       <Label layoutX="435.0" layoutY="125.0" text="ID:" />
       <Button layoutX="526.0" layoutY="123.0" mnemonicParsing="false" text="löschen" onAction="#delete"/>
       <Label layoutX="22.0" layoutY="127.0" text="Project:" />
-      <TextField layoutX="86.0" layoutY="123.0" prefHeight="26.0" prefWidth="114.0" />
-      <TextField layoutX="276.0" layoutY="122.0" prefHeight="26.0" prefWidth="99.0" />
+      <TextField layoutX="86.0" layoutY="123.0" prefHeight="26.0" prefWidth="114.0" fx:id="project"/>
+      <TextField layoutX="276.0" layoutY="122.0" prefHeight="26.0" prefWidth="99.0" fx:id="category"/>
       <Label layoutX="211.0" layoutY="126.0" text="Category:" />
    </children>
 </AnchorPane>

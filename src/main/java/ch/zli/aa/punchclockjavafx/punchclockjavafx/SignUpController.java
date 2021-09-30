@@ -1,5 +1,8 @@
 package ch.zli.aa.punchclockjavafx.punchclockjavafx;
 
+import javafx.fxml.FXML;
+import javafx.scene.control.TextField;
+
 import java.io.IOException;
 
 /**
@@ -9,6 +12,13 @@ import java.io.IOException;
  * @Version:
  */
 public class SignUpController {
+
+    @FXML
+    TextField username;
+    @FXML
+    TextField password;
+    @FXML
+    TextField passwordAgain;
 
     public void signupAndgoLogin() throws IOException {
 

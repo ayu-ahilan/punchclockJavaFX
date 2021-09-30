@@ -10,9 +10,9 @@
       <Label layoutX="73.0" layoutY="108.0" text="Benutzername:" />
       <Label layoutX="88.0" layoutY="151.0" text="Passwort:" />
       <Label layoutX="22.0" layoutY="191.0" text="Bitte wiederholen Sie ihr Passwort:" />
-      <TextField layoutX="268.0" layoutY="104.0" />
-      <TextField layoutX="268.0" layoutY="147.0" />
-      <TextField layoutX="268.0" layoutY="188.0" />
+      <TextField layoutX="268.0" layoutY="104.0" fx:id="username"/>
+      <TextField layoutX="268.0" layoutY="147.0" fx:id="password"/>
+      <TextField layoutX="268.0" layoutY="188.0" fx:id="passwordAgain"/>
       <Button layoutX="480.0" layoutY="188.0" mnemonicParsing="false" text="Registrieren" onAction="#signupAndgoLogin"/>
       <Button layoutX="469.0" layoutY="265.0" mnemonicParsing="false" text="Zurück zu Login" onAction="#goLogin"/>
    </children>
